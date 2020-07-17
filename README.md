@@ -11,6 +11,8 @@ RESULTADO
 ------------------
 
 ![log print](output.png)
+
+------------------
 ![log print](output2.png)
 
 
