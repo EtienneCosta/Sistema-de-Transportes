@@ -75,9 +75,9 @@ resolvedf(Node, Historico, [ProxNodo|Solucao]):-
 
 resolveBF(Origin, Destiny, Visited,Km) :-
     resolvebf([Origin],[],RevVisited,Destiny),
-    removeNotConnected(RevVisited, Visited).
-    %printf(Visited).
-    %custoTotal(Visited,Km).
+    removeNotConnected(RevVisited, Visited),
+    printf(Visited),
+    custoTotal(Visited,Km).
 
 resolvebf([Destiny|_], History, [Destiny|History], Destiny).
 resolvebf([Node|RestQ], History, RevVisited, Destiny) :-
